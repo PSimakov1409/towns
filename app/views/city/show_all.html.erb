@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <tr>
+      <th>Города</th>
+      <th>Население</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cities.each do |city| %>
+      <tr>
+        <td><%= city.name %></td>
+        <td><%= city.population %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
